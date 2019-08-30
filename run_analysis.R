@@ -44,7 +44,6 @@ dataCombine <- cbind(dataSubject, dataActivity)
 Data <- cbind(dataFeatures, dataCombine)
 #Extracts only the measurements on the mean and standard deviation for each measurement
 #Subset Name of Features by measurements on the mean and standard deviation
-#i.e taken Names of Features with ???mean()??? or ???std()???
 
 subdataFeaturesNames<-dataFeaturesNames$V2[grep("mean\\(\\)|std\\(\\)", dataFeaturesNames$V2)]
 
